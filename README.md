@@ -1,12 +1,13 @@
 # ssd_ocr
 
-Implement A Fast Text Detector by tensorflow [paper](https://arxiv.org/pdf/1611.06779.pdf)
+Implement a fast text detector by tensorflow [paper](https://arxiv.org/pdf/1611.06779.pdf)
 
 ## Basic Instructions
 
 1.Dataset directory contains 350 images,The annotations on all train and test images will be stored in two single xml file,all bounding boxes are represented by four parameters (x,y,w,h).
-2.You need download vgg16.npy from [this repository](https://github.com/machrisaa/tensorflow-vgg),which is better than you don't use.
-3.some result are good and some bad ,Making this result maybe lack of amount of dataset,so keep much data as much as you can.
+<br/>
+2.You need download vgg16.npy from [this repository](https://github.com/machrisaa/tensorflow-vgg),which is better than you don't use.<br/>
+3.some result are good and some bad ,Making this result maybe lack of amount of dataset,so keep much data as much as you can.<br/>
 ## Dependencies
 
 * TensorFlow
