@@ -1,33 +1,23 @@
-# real_time_face_detection and recognition
-This is a real time face detection and recognition project base  on opencv/tensorflow/mtcnn/facenet. Chinese version of description is [here](https://zhuanlan.zhihu.com/p/25025596) .Face detection is based on [MTCNN](https://kpzhang93.github.io/MTCNN_face_detection_alignment/index.html).Face embedding is based on [Facenet](https://arxiv.org/abs/1503.03832).
-##Workflow
-![](https://github.com/shanren7/real_time_face_recognition/blob/master/images/real%20time%20face%20detection%20and%20recognition.jpg)
+# ssd_ocr
 
-##Inspiration
-The code was inspired by several projects as follows:
+Implement A Fast Text Detector by tensorflow [paper](https://arxiv.org/pdf/1611.06779.pdf)
 
-1.[OpenFace](https://github.com/cmusatyalab/openface). The main idea was inspired by openface. However, I prefer python and tensorflow,so there comes this project.
+## Basic Instructions
 
-2.[davidsandberg/facenet](https://github.com/davidsandberg/facenet).
+1.Dataset directory contains 350 images,The annotations on all train and test images will be stored in two single xml file,all bounding boxes are represented by four parameters (x,y,w,h).
+2.You need download vgg16.npy from [this repository](https://github.com/machrisaa/tensorflow-vgg),which is better than you don't use.
+3.some result are good and some bad ,Making this result maybe lack of amount of dataset,so keep much data as much as you can.
+## Dependencies
 
-   facenet.py was taken from https://github.com/davidsandberg/facenet/blob/master/facenet/src/facenet.py
-    
-   nn4.py was taken from https://github.com/davidsandberg/facenet/blob/master/src/models/nn4.py
-    
-   detect_face.py was taken from https://github.com/davidsandberg/facenet/blob/master/src/align/detect_face.py
-    
-3.[yobibyte/yobiface](https://github.com/yobibyte/yobiface).
+* TensorFlow
+* OpenCV
+* XML
 
-##Dependencies
-1.tensorflow
-2.opencv with python bindings (cv2)
-3.jupyter notebook for running .ipynb examples
+## Results of some test images
+<img src="https://github.com/zhangcheng007/ssd_ocr/blob/master/images/00_23.jpg" width="300"/>
+<img src="https://github.com/zhangcheng007/ssd_ocr/blob/master/images/00_25.jpg" width="300"/>
 
-##Running
-1.Downloading pre-trained facenet from https://github.com/yobibyte/yobiface/blob/master/model/model-20160506.ckpt-500000 and putting in model_check_point folder.
-
-2.Running [real time face detection and recognition.ipynb](https://github.com/shanren7/real_time_face_recognition/blob/master/real%20time%20face%20detection%20and%20%20recognition.ipynb) with jupyter notebook
-
-##Results
-![](https://github.com/shanren7/real_time_face_recognition/blob/master/images/video_guai_20.jpg)
-![](https://github.com/shanren7/real_time_face_recognition/blob/master/images/video_guai_2192.jpg)
+## References
+https://github.com/seann999/ssd_tensorflow<br/>
+https://github.com/shinjayne/textboxes
+<br/>
