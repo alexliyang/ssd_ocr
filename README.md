@@ -16,6 +16,8 @@ Implement A Fast Text Detector by tensorflow [paper](https://arxiv.org/pdf/1611.
 ## Results of some test images
 <img src="https://github.com/zhangcheng007/ssd_ocr/blob/master/images/00_23.jpg" width="300"/>
 <img src="https://github.com/zhangcheng007/ssd_ocr/blob/master/images/00_25.jpg" width="300"/>
+<img src="https://github.com/zhangcheng007/ssd_ocr/blob/master/images/00_30.jpg" width="300"/>
+
 
 ## References
 https://github.com/seann999/ssd_tensorflow<br/>
